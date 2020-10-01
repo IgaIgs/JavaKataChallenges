@@ -8,7 +8,8 @@
  *
  * Object[]{"", 0}
  */
-
+/* 2 for loops
+ */
 public class Kata7charWithLongestRepetition {
 
     public static Object[] longestRepetition(String s) {
