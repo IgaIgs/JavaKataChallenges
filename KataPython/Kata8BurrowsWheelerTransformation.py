@@ -1,6 +1,10 @@
 import numpy as np
 from operator import itemgetter
 
+# The forward transformation works as follows: Let's say we have a sequence with length n, first write every shift of that string into a n x n matrix.
+# Then we sort that matrix by its rows. The output of the transformation then is the last column and the row index in which the original string is in.
+# Of course we want to restore the original input so the goal of this Kata is to write both, 
+# the encode and decode functions. Together they should work as the identity function on lists. (Note: For the empty input, the row number is ignored.)
 
 def encode(s):
     if s == "":
